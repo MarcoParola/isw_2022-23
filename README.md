@@ -9,58 +9,41 @@ Questa repository contiene il materiale per i laboratori del corso di Ingegneria
 - Criteri di qualità del codice
 - Concetto framework
 - Paradigma MVC
-- Framework php Laravel
-- Artisan CLI e vantaggi di usare Artisan GUI 
-- MVC in laravel
-- creazione e descrizione di un progetto laravel
+- Struttura di un progetto MVC (model, view, controller, service/util)
 
 ### Pratica
 - Installazione strumenti e tool
-- Primo progetto "Hello-world" in laravel: crea un progetto, aggiungi una vista e aggiungi una rotta
+- Primo progetto MVC per studiare la struttura
+- Esercizio somma tra due numeri: crea una vista con un form, aggiungi le rotte, aggiungi un controller che gestisca le richieste, aggiungi una classe di servizio che risolva il calcolo
+
 
 
 
 ---
 &nbsp;
-## LAB-1
+## [LAB-1](lab-1/README.md)
 ### Teoria
-- Logica di business o di domionio
-- Classi di servizio che realizzano la logica di business per garantire la modularità
+- Mail server
+- Inviare e-mail in PHP usando la funzione *mail()*
 
 ### Pratica
-- Esercizio somma tra due numeri: crea una vista con un form, aggiungi le rotte, aggiungi un controller che gestisca le richieste, aggiungi una classe di servizio che risolva il calcolo
-- Variante con lettura di configurazione da file json (se c'è tempo)
+- Esercizio invio mail in PHP
 
 
 ---
 &nbsp;
-## LAB-2
+## [LAB-2](lab-2/README.md)
 ### Teoria
-- Classe ``User`` in Laravel
-- Autenticazione e strumenti per gestire gli accessi
-- XAMPP e MySQL
-- Come laravel semplifica l'accesso al db
-- migrazione e configurazione
+- Generare file PDF in PHP
+- libreria *fpdf*, funzioni principali
 
 ### Pratica 
-- Esercizio per fare registrare, loggare e disconnettere un utente da un sito
+- Esercizio generazione pdf: prepara un form con un campo di testo e al submit del form genera un pdf contenente la scritta inserita nel campo del form
 
 
 ---
 &nbsp;
 ## LAB-3
-### Teoria
-- Automatismo del servizio di mail in Laravel
-- Mercury mail server in XAMPP
-- Setup della configurazione del progetto laravel per inviare mail
-
-### Pratica
-- Esercizio invio mail
-
-
----
-&nbsp;
-## LAB-4
 ### Teoria
 - Importanza della fase di testing
 - Cosa sono i test di unità
@@ -69,12 +52,13 @@ Questa repository contiene il materiale per i laboratori del corso di Ingegneria
 ### Pratica
 - Esercizio di testing (ancora devo pensarci)
 
-
 ---
 &nbsp;
-## LAB-5
+## LAB-4
 ### Teoria
-- FPDF, libreira per generare pdf da php
-- codice di esempio
-### Pratica 
-- Lavoriamo ai progetti
+- Wordpress
+
+### Pratica
+- Installazione wp
+
+
