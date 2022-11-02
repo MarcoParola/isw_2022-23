@@ -1,14 +1,28 @@
 # Laboratorio 0
-In questo laboratorio faremo un recap sull'ingegneria del software. Daremo la definizione di Framework e del paradigma MVC, analizzando il framework php Laravel e tutti i vantaggi che fornisce.
+In questo laboratorio faremo un recap sull'ingegneria del software. Daremo la definizione di paradigma MVC.
 
 # Teoria
 
 
-## Recap ingegneria del software
+## Le P del programmatore
+- **P**rima
+- **P**ensa
+- **P**oi
+- **P**rogramma
+- **P**erchè
+- **P**rogrammi
+- **P**oco
+- **P**ensati
+- **P**ossono 
+- **P**ortare
+- **P**arecchi
+- **P**roblemi
+
 
 ## Criteri di qualità del codice
 
-- nomi di file, classi, metodi e variabili
+### Nomi di file, classi, metodi e variabili
+
 - lunghezza delle funzioni
 - Responsabilità delle classi 
 - Organizzazione della struttura del progetto
