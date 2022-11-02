@@ -32,9 +32,9 @@ Un framework è un ambiente di sviluppo composto da un set di tool, che permette
 ### Artisan e Artisan GUI
 Artisan è l'interfaccia a linea di comando (CLI, Command Line Interface) di Laravel. Artisan CLI fornisce agli sviluppatori una serie di comandi utili da utilizzare durante lo sviluppo di un'applicazione Laravel. Alcune delle operazioni che possono essere svolte richiamando il comando 'artisan' sono la creazione di modelli, controller, regole di validazione, e la migrazione di dati. 
 
-```
-php artisan nome_comando
-```
+
+> php artisan nome_comando
+
 
 In questo corso non useremo artisan da linea di comando, bensì da un'interfaccia grafica fornita da Laravel [Artisan GUI](https://github.com/infureal/artisan-gui).
 Laravel Artisan GUI è un package di Bakhtiyar Issakhmetov che consente di eseguire i comandi Artisan da un'interfaccia web. Di default, è possibile accedere a questa pagina solo nell'ambiente locale, visitando ``/~artisan`` nella propria applicazione. 
