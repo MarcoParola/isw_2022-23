@@ -21,11 +21,13 @@ In questo laboratorio faremo un recap sull'ingegneria del software. Daremo la de
 
 ## Criteri di qualità del codice
 
-### Nomi di file, classi, metodi e variabili
+
+Uno dei problemi più comuni degli sviluppatori è quello dei nomi. A volte passiamo più tempo a leggere il codice che a scriverlo, quindi una buona denominazione ripaga sempre in futuro. L'uso di buoni nomi rende il codice migliore e più pulito. Aiuta a identificare intuitivamente le responsabilità di ciascuna parte del codice. Rende la vostra applicazione facilmente leggibile in futuro da altri sviluppatori. La notazione ``snake_case`` utilizza parole in minuscolo separate da trattini bassi _. Questo è il formato suggerito, poiché i trattini bassi facilitano la lettura della variabile e non aggiungono troppo alla lunghezza del nome della variabile. Questa notazione viene utilizzata generalmente per nominare le variabili.
+La notazione ``camelCase`` o ``CamelCase`` utilizza la prima lettera maiuscola delle parole nel nome di una variabile per facilitarne la lettura. 
+Una buona pratica è usare la notazione a camello con la prima lettera maiuscola per dichiarare classi o interfacce, mentre con la minuscola per dichiarare funzioni e metodi.
 
 - lunghezza delle funzioni
 - Responsabilità delle classi 
-- Organizzazione della struttura del progetto
 
 
 ## Paradigma MVC
@@ -52,7 +54,7 @@ In questo laboratorio faremo un recap sull'ingegneria del software. Daremo la de
 ```
 
 
-
+* ``./``, root del progetto
 * ``index.php``, rappresenta l'entry point della nostra applicazione
 * ``css/``, cartella dove inseriremo i fogli di stile (file .css)
 * ``js/``, cartella dove inseriremo il codice javascript (file .js)

@@ -2,6 +2,12 @@
 
 Questa repository contiene il materiale per i laboratori del corso di Ingegneria del software per l'anno 2022/23.
 
+In questi laboratori useremo l'editor di testo Visual Studio Code scaricabile al seguente [link](https://code.visualstudio.com/download), in cui installeremo il plugin PHPtool (?) e programmeremo usando il linguaggio PHP.
+
+![drawing](./img/php_meme.jpg)
+
+I laboratori ed il progetto saranno sviluppati nell'ambiente fornito a lezione e scaricabile al seguente link (istruzioni nei prossimi laboratori per l'installazione). 
+
 ---
 ## [**LAB-0**](lab-0/README.md)
 ### Teoria
@@ -21,10 +27,11 @@ Questa repository contiene il materiale per i laboratori del corso di Ingegneria
 
 ---
 &nbsp;
-## [LAB-1](lab-1/README.md)
+## [**LAB-1**](lab-1/README.md)
 ### Teoria
-- Mail server
-- Inviare e-mail in PHP usando la libreria ``PHPMailer``
+- Mail server e protocollo SMTP
+- Funzione nativa *mail()* VS libreria *PHPMailer*
+- Panoramica libreria ``PHPMailer``
 
 ### Pratica
 - Esercizio invio mail in PHP
@@ -32,18 +39,18 @@ Questa repository contiene il materiale per i laboratori del corso di Ingegneria
 
 ---
 &nbsp;
-## [LAB-2](lab-2/README.md)
+## [**LAB-2**](lab-2/README.md)
 ### Teoria
 - Generare file PDF in PHP
-- libreria *fpdf*, funzioni principali
+- Panoramica libreria ``FPDF``
 
 ### Pratica 
-- Esercizio generazione pdf: prepara un form con un campo di testo e al submit del form genera un pdf contenente la scritta inserita nel campo del form
+- Esercizio generazione pdf
 
 
 ---
 &nbsp;
-## LAB-3
+## **LAB-3**
 ### Teoria
 - Importanza della fase di testing
 - Cosa sono i test di unità
@@ -54,7 +61,7 @@ Questa repository contiene il materiale per i laboratori del corso di Ingegneria
 
 ---
 &nbsp;
-## LAB-4
+## **LAB-4**
 ### Teoria
 - Wordpress
 
