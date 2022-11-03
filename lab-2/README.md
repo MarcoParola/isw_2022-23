@@ -12,28 +12,28 @@ In questa lezione vedremo come creare file PDF dinamici con PHP, sfruttando la [
 
 
 
-### Piccola panoramica della libreria FPDF
+### Panoramica della libreria FPDF
 
 Per prima cosa è necessario scaricare manualmente la libreria dal [sito ufficiale](http://www.fpdf.org/en/download.php) o tramite un gestore di packages.
 Il file zip scaricato deve essere decompresso e copiato all'interno del nostro progetto (cartella lib/).
 
 Dopo aver copiato la libreria all'interno del nostro progetto, la importiamo all'interno del file in cui abbiamo intenzione di usarla.
-```
+```php
 require('fpdf.php');
 ```
 
 Dopo aver incluso il file della libreria, instanziamo un oggetto chiave della libreria: FPDF. Il costruttore viene utilizzato senza specificare nessun parametro; in generale è possibile specificare alcuni argomenti come il formato delle pagine, l'unità di misura, ecc.
-```
+```php
 $pdf = new FPDF();
 ```
 
 Al momento abbiamo un oggetto FPDF che non contiene nessuna pagina, quindi dobbiamo aggiungerne una con la funzione ``AddPage()``. 
-```
+```php
 $pdf->AddPage();
 ```
 
 Prima di poter stampare il testo, è obbligatorio selezionare un carattere con SetFont(). Scegliamo, ad esempio, Arial bold 16. La libreria permette anche di specificare il corsivo con ``I``, il sottolineato con ``U`` o un carattere normale con una stringa vuota (o qualsiasi combinazione). 
-```
+```php
 $pdf->SetFont('Arial','B',16);
 ```
 
@@ -42,13 +42,29 @@ Possiamo stampare una cella con la funzione Cell(). Una cella è un'area rettang
 * il testo (centrato o allineato)
 * se devono essere disegnati dei bordi
 * dove si sposta la posizione corrente dopo di essa (a destra, sotto o all'inizio della riga successiva)
-```
+```php
 $pdf->Cell(40,10,'Hello World !',1);
 ```
 Infine, il documento viene chiuso e inviato al client (browser) tramite la funzione ``Output()``. Inoltre è possibile salvare il risultato in un file passando i parametri appropriati. 
-```
+```php
 $pdf->Output();
 ```
+
+Codice riassuntivo
+```php
+<?php 
+
+require('fpdf.php');
+
+$pdf = new FPDF();
+$pdf->AddPage();
+$pdf->SetFont('Arial','B',16);
+$pdf->Cell(40,10,'Hello World !',1);
+$pdf->Output();
+
+?>
+```
+
 
 ## Pratica
 

@@ -24,7 +24,7 @@ Questa repository contiene il materiale per i laboratori del corso di Ingegneria
 ## [LAB-1](lab-1/README.md)
 ### Teoria
 - Mail server
-- Inviare e-mail in PHP usando la funzione *mail()*
+- Inviare e-mail in PHP usando la libreria ``PHPMailer``
 
 ### Pratica
 - Esercizio invio mail in PHP
