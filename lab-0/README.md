@@ -77,5 +77,6 @@ Non essendo integrate all'interno di Laravel, non c'è un comando artisan make p
 
 &nbsp;
 # Pratica
+Esercizio somma tra due numeri: crea una vista con un form, aggiungi le rotte, aggiungi un controller che gestisca le richieste, aggiungi una classe di servizio che risolva il calcolo
 
 

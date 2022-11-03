@@ -19,9 +19,7 @@ I laboratori ed il progetto saranno sviluppati nell'ambiente fornito a lezione e
 
 ### Pratica
 - Installazione strumenti e tool
-- Primo progetto MVC per studiare la struttura
-- Esercizio somma tra due numeri: crea una vista con un form, aggiungi le rotte, aggiungi un controller che gestisca le richieste, aggiungi una classe di servizio che risolva il calcolo
-
+- Esercizio somma tra due numeri
 
 
 

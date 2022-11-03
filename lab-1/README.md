@@ -8,6 +8,9 @@ La versione del protocollo oggi in uso comune ha una struttura estensibile con v
 
 Noi vorremmo un'astrazione di quanto presentato fino ad ora e vorremmo lavorare a livello applicazione, ignari dell'implementazione a basso livello di protocolli, server ecc.
 Due, tra le soluzioni più diffuse che ci forniscono un'interfaccia semplice per l'invio di mail in PHP, sono la funzione [mail()](https://www.php.net/manual/en/function.mail.php) integrata direttamente da PHP o la libreria [PHPMailer](https://github.com/PHPMailer/PHPMailer).
+
+![drawing](../img/mail_meme.jpg)
+
 In questo laboratorio studieremo la libreria PHPMailer.
 
 
