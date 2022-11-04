@@ -1,13 +1,16 @@
 
 <?php
 
-require "../../lib/fpdf184/fpdf.php";
+require '../../utils/PdfGenerator.php';
 
+class PdfController
+{
+    public static function pdf_handler($param)
+    {
+        PdfGenerator::generate_pdf($param);
+    }
+}
 
-$pdf = new FPDF();
-$pdf->AddPage();
-$pdf->SetFont('Arial','B',16);
-$pdf->Cell(40,10, $_POST['text']);
-$pdf->Output();
+PdfController::pdf_handler($_POST);
 
 ?>
