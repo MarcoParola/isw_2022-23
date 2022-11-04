@@ -1,0 +1,36 @@
+
+    <!doctype html>
+    <html>
+    <head>
+        <script src="https://unpkg.com/sweetalert2@7.8.2/dist/sweetalert2.all.js"></script>
+    </head>
+    <body>
+
+        <script> 
+        
+            let searchParams = new URLSearchParams(window.location.search);
+            let param = JSON.parse(searchParams.get('sent'));
+            if(param == true)
+            {
+                swal({
+                    title: "Mail correctly sent!",
+                    text: "Thak you!",
+                    type: "success"
+                }).then(function() {
+                    window.location = "../../index.php";
+                });
+            }
+            else
+            {
+                swal({
+                    title: "Mail not sent!",
+                    text: "Something went wrong",
+                    type: "error"
+                }).then(function() {
+                    window.location = "../../index.php";
+                });
+            }
+            
+    </script>
+    </body>
+    </html>

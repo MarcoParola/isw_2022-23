@@ -58,7 +58,6 @@ Una buona pratica è usare la notazione a camello con la prima lettera maiuscola
 * ``index.php``, rappresenta l'entry point della nostra applicazione
 * ``css/``, cartella dove inseriremo i fogli di stile (file .css)
 * ``js/``, cartella dove inseriremo il codice javascript (file .js)
-* ``lib/``, cartella dove inseriremo le librerie da includere nei nostri progetti
 * ``utils/``, cartella dove inseriremo le classi php con cui sviluppiamo la logica di business
 * ``src/``, cartella dove contenente 3 sottocartelle, in cui svilupperemo il paradigma MVC:
     * ``models/``
