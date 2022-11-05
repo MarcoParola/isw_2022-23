@@ -21,13 +21,15 @@ In questo laboratorio faremo un recap sull'ingegneria del software. Daremo la de
 
 ## Criteri di qualità del codice
 
-
+### Nomenclatura
 Uno dei problemi più comuni degli sviluppatori è quello dei nomi. A volte passiamo più tempo a leggere il codice che a scriverlo, quindi una buona denominazione ripaga sempre in futuro. L'uso di buoni nomi rende il codice migliore e più pulito. Aiuta a identificare intuitivamente le responsabilità di ciascuna parte del codice. Rende la vostra applicazione facilmente leggibile in futuro da altri sviluppatori. La notazione ``snake_case`` utilizza parole in minuscolo separate da trattini bassi _. Questo è il formato suggerito, poiché i trattini bassi facilitano la lettura della variabile e non aggiungono troppo alla lunghezza del nome della variabile. Questa notazione viene utilizzata generalmente per nominare le variabili.
 La notazione ``camelCase`` o ``CamelCase`` utilizza la prima lettera maiuscola delle parole nel nome di una variabile per facilitarne la lettura. 
 Una buona pratica è usare la notazione a camello con la prima lettera maiuscola per dichiarare classi o interfacce, mentre con la minuscola per dichiarare funzioni e metodi.
 
-- lunghezza delle funzioni
-- Responsabilità delle classi 
+### Responsabilità delle classi 
+I sistemi software robusti dovrebbero essere costruiti a partire da una rete di oggetti interconnessi le cui responsabilità sono strette e ben coese, riducendosi all'esecuzione di pochi compiti ristretti e ben definiti. Tuttavia, è abbastanza difficile progettare sistemi di questo tipo, almeno in prima battuta. Il più delle volte tendiamo a raggruppare i compiti in questione seguendo un senso semantico. Una delle conseguenze più note di questo processo associativo razionale è che, a un certo punto, finiamo per creare classi che fanno troppo, le cosiddette classi onnipotenti. Come si può progettare classi le cui responsabilità siano coese? Anche quando non c'è una risposta diretta alla domanda, è possibile aderire in generale alle regole del Principio della Responsabilità Unica, la cui definizione formale afferma quanto segue: Non dovrebbe mai esserci più di una ragione per cui una classe debba cambiare. L'idea è che le classi devono sempre essere progettate per esporre una sola area di competenza e l'insieme delle operazioni che definiscono e implementano deve essere finalizzato a soddisfare questa competenza e nient'altro. 
+
+### lunghezza delle funzioni
 
 
 ## Paradigma MVC
@@ -63,6 +65,15 @@ Una vista (view) è una qualsiasi rappresentazione delle informazioni, come un g
 ### Controllore (cervello)
 Il codice del controllore (controller) funge da collegamento tra il modello e la vista, ricevendo gli input dell'utente e decidendo come gestire tali input. 
 
+
+## Service classes
+La logica di business o logica di dominio è quella parte del programma che codifica le regole di business del mondo reale che determinano come i dati possono essere creati. Tale logica è incorporata nelle classi di servizio.
+
+
+### Struttura del progetto
+
+*"Un posto per ogni cosa, ogni cosa al suo posto"*
+
 * ``./``, root del progetto
 * ``index.php``, rappresenta l'entry point della nostra applicazione
 * ``css/``, cartella dove inseriremo i fogli di stile (file .css)
@@ -72,16 +83,6 @@ Il codice del controllore (controller) funge da collegamento tra il modello e la
     * ``models/``
     * ``views/``
     * ``controller/``
-
-
-*"Un posto per ogni cosa, ogni cosa al suo posto"*
-
-**Cosa è la logica di business o logica di dominio? E qual è il posto giusto all'interno di un progetto?**
-La logica di business o logica di dominio è quella parte del programma che codifica le regole di business del mondo reale che determinano come i dati possono essere creati, memorizzati e modificati. Essa prescrive il modo in cui gli oggetti di business interagiscono tra loro e impone i percorsi e i metodi con cui gli oggetti di business vengono acceduti e aggiornati. Tale logica è incorporata nelle classi di servizio. 
-
-## Service classes
-L'idea delle classi di servizio non è integrata nel framework o documentata nella documentazione ufficiale. Di conseguenza, le persone si riferiscono ad esse in modo diverso. 
-Non essendo integrate all'interno di Laravel, non c'è un comando artisan make per creare una classe di servizio. Si possono tenere le classi dove si vuole. Una buona soluzione è mettere le nostre classi di servizio in ``app/Services``.
 
 
 &nbsp;
