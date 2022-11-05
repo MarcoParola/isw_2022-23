@@ -1,6 +1,6 @@
 <?php
 
-require "../../lib/fpdf184/fpdf.php";
+require "../../../../../lib/fpdf184/fpdf.php";
 
 
 class PdfGenerator

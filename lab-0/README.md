@@ -54,6 +54,15 @@ Una buona pratica è usare la notazione a camello con la prima lettera maiuscola
 ```
 
 
+### Modello (dati)
+Il modello (model) è il componente centrale del paradigma MVC. È la struttura dinamica dei dati dell'applicazione, indipendente dall'interfaccia utente. Il modello ha il compito di gestire semplicemente i dati. Che i dati provengano da un database, da un'API o da un oggetto JSON, il modello è responsabile della loro gestione.
+
+### Vista (UI)
+Una vista (view) è una qualsiasi rappresentazione delle informazioni, come un grafico, un diagramma o una tabella. Sono possibili più visualizzazioni delle stesse informazioni, come ad esempio un grafico a barre per il management e una visualizzazione tabellare per i contabili.
+
+### Controllore (cervello)
+Il codice del controllore (controller) funge da collegamento tra il modello e la vista, ricevendo gli input dell'utente e decidendo come gestire tali input. 
+
 * ``./``, root del progetto
 * ``index.php``, rappresenta l'entry point della nostra applicazione
 * ``css/``, cartella dove inseriremo i fogli di stile (file .css)
@@ -63,6 +72,7 @@ Una buona pratica è usare la notazione a camello con la prima lettera maiuscola
     * ``models/``
     * ``views/``
     * ``controller/``
+
 
 *"Un posto per ogni cosa, ogni cosa al suo posto"*
 
