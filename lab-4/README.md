@@ -9,4 +9,26 @@ Per funzionare, WordPress deve essere installato su un server Web, sia che facci
 ```
 ```
 
+
+
+## Test di unità
+I test di unità sono tipicamente test automatizzati scritti ed eseguiti dagli sviluppatori di software per garantire che una sezione di un'applicazione (nota come "unità") soddisfi il suo progetto e si comporti come previsto. Nella programmazione procedurale, un'unità può essere un intero modulo, ma è più comunemente una singola funzione o procedura. Nella programmazione orientata agli oggetti, un'unità è spesso una classe o un singolo metodo.  Inoltre, per isolare i problemi che possono sorgere, ogni caso di test dovrebbe essere testato in modo indipendente.a
+Durante lo sviluppo, uno sviluppatore di software può codificare criteri, o risultati che si sa essere buoni, nel test per verificare la correttezza dell'unità. Durante l'esecuzione dei casi di test, i framework registrano i test che falliscono qualsiasi criterio e li riportano in un riepilogo. Per questo, l'approccio più comunemente utilizzato è test - funzione - valore atteso.
+
+
+---
+
+# Tipi di test del software
+Esistono molti tipi diversi di test del software, ciascuno con obiettivi e strategie specifici:
+
+- Test di accettazione: verifica se l'intero sistema funziona come previsto.
+Test di integrazione: garantisce che i componenti o le funzioni del software funzionino insieme.
+
+- Test dell'unità: conferma che ogni unità software funzioni come previsto. Un'unità è il componente testabile più piccolo di un'applicazione
+
+- Test funzionale: verifica le funzioni emulando gli scenari dell'azienda, in base ai requisiti funzionali. Il test black-box è un modo comune per verificare le funzioni.
+
+- Test delle prestazioni: verifica le prestazioni del software quando sottoposto a diversi carichi di lavoro. Il test di carico, ad esempio, viene utilizzato per valutare le prestazioni in condizioni di carico reali.
+
+
 ## Pratica

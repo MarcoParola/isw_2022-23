@@ -71,6 +71,7 @@ $messaggio->SmtpClose();
 unset($messaggio);
 ```
 
+
 Codice riassuntivo
 ```php
 <?php
@@ -78,9 +79,9 @@ Codice riassuntivo
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require '../assets/PHPMailer/src/Exception.php';
-require '../assets/PHPMailer/src/PHPMailer.php';
-require '../assets/PHPMailer/src/SMTP.php';
+require '../../lib/PHPMailer/src/Exception.php';
+require '../../lib/PHPMailer/src/PHPMailer.php';
+require '../../lib/PHPMailer/src/SMTP.php';
 
 
 $messaggio = new PHPmailer();
