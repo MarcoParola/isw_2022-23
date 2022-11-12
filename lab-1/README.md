@@ -111,4 +111,4 @@ unset($messaggio);
 
 ## Pratica
 
-Esercizio invio mail tramite PHP: crea un form contenente 3 campi: nome, indirizzo mail del destinatario e testo. Aggiungi un controller che gestisca l'invio di mail, quando viene fatto il submit del form invia una mail all'indirizzo del destinatario contenente il testo specificato nel form.
+Esercizio invio mail tramite PHP: crea un form contenente 3 campi: nome, indirizzo mail del destinatario e testo. Quando viene fatto il submit del form, deve essere inviata una mail all'indirizzo del destinatario contenente il testo specificato nel form.

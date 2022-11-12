@@ -76,5 +76,5 @@ $pdf->Output();
 
 ## Pratica
 
-Sviluppare un progetto MVC in php. All'avvio dell'applicazione si apre un form contenente un campo di testo; al submit del form deve essere generato un file pdf tramite la libreria fpdf contenente la stringa inserita nel campo di testo del form.
+Sviluppare un progetto in php. All'avvio dell'applicazione si apre un form contenente un campo di testo; al submit del form deve essere generato un file pdf tramite la libreria fpdf contenente la stringa inserita nel campo di testo del form.
 

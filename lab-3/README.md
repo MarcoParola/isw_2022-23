@@ -34,7 +34,11 @@ In questo modo otteniamo un database MySql vuoto che il backend utilizzerà dura
 ### Backend
 Scarichiamo il pacchetto wp dal sito del corso, decomprimiamolo in ``C:\isw\projects\``, rinominare il la cartella "wordpress-6.1-it_IT" in "deployment".
 
-Collegarsi all'indirizzo http://localhost/final_project/ e seguire gli step guidati per l'installazione. Valorizzare il campo "Nome del database" del form a cui saremo reindirizzati con la stringa "db_isw": In questo modo specifichiamo a Wordpress il database a cui fare riderimento. I restanti campi possono essere lasciati vuoti/con i valori di default.
+Collegarsi all'indirizzo http://localhost/final_project/ e seguire gli step guidati per l'installazione. Valorizzare come riportato di seguito i campi del form a cui saremo reindirizzati (quelli non specificati possono essere lasciati vuoti o con il valore di default):
+* Nome del database: db_isw (nome del database creato nei precedenti step)
+* Nome utente del database: root
+
+In questo modo specifichiamo a Wordpress il database a cui fare riderimento. I restanti campi possono essere lasciati vuoti/con i valori di default.
 
 ![drawing](./img/installation_wp.PNG)
 
@@ -47,3 +51,97 @@ Valorizzare come riportato di seguito i campi del form a cui saremo reindirizzat
 
 Infine, effettuare il login con le credenziali admin, admin. In questo modo saremo reindirizzati sulla dashboard di Wordpress.
 La dashboard di wp sarà accessibile all'indirizzo http://localhost/deployment/wp-admin. 
+
+Wordpress ci permette di effettuare diverse operazioni dalla sua interfaccia di gestione:
+* Aggiungere utenti e gestire i permessi di accesso
+* Installare plugin
+* Aggiungere contenuti
+* Aggiungere pagine, permettendo l'editing tramite drug and drop
+
+L'integrazione di un progetto plain php all'interno di un instanza wordpress può essere effettuata definendo un nuovo template all'interno dei temi/themes wordpress. Nel nostro ambiente (root del progetto wordpress), troviamo la cartella al percorso
+```
+wp-content\themes\twentytwentythree\templates
+```
+
+Definire un nuovo template, significa creare un nuovo file php all'interno della cartella sopra riportata, contenente la seguente intestazione:
+
+```php
+<?php
+/**
+
+ * Template Name: templatename
+
+ */
+
+?>
+```
+Potremmo definire un template di pagina per verificare la corretta integrazione del nostro codice PHP all'interno dell'instanza wp.
+Creiamo un nuovo file in cui copiamo il seguente contenuto e salviamolo in un file chiamato ``test_template.php``
+
+```html
+<?php
+/**
+
+ * Template Name: test_template
+
+ */
+?>
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <h1>ISW</h1>
+        <p>testing new template</p>
+
+    </body>
+</html> 
+```
+Per verificare il corretto funzionamento dell'integrazione, accediamo al pannello di controllo di wp e creiamo una nuova pagina.
+Si aprirà l'editor grafico della pagina in cui dovremmo selezionare il template della pagina che stiamo creando. Nel menù laterale selezioniamo il template che abbiamo appena creato tra quelli disponibili.
+
+![drawing](./img/template.gif)
+
+Dopo aver dato un titolo alla pagina, possiamo pubblicarla e visualizzare il risultato.
+
+Infine integriamo una classe PHP di esempio all'interno del template.
+Per prima cosa creiamo la classe PHP e salviamola in un file ``Test.php`` all'interno del nostro progetto (per semplicità salviamo il file nella stessa locazione dove abbiamo salvato il template).
+```php
+<?php 
+
+class Test{
+    public function say_hello(){
+        echo "ciao";
+    }
+}
+
+?>
+```
+
+Adesso, modifichiamo il file ``test_template.php`` includendo la classe appena creata.
+```html
+<?php
+/**
+
+ * Template Name: test_template
+
+ */
+
+require "Test.php";
+?>
+
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <h1>ISW</h1>
+        <p>testing new template</p>
+        <?php 
+            $test = new Test();
+            $test->say_hello();
+        ?>
+
+    </body>
+</html> 
+```
+
+Ricaricando la pagina, possiamo visualizzare il risultato.
